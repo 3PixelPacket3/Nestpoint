@@ -1,0 +1,41 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/api/*", "/*.png", "/*.jpg", "/*.jpeg", "/*.svg", "/*.css", "/*.js"]
+  },
+  "routes": [
+    {
+      "route": "/calendar",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/work",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/grocery",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/feed",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/settings/*",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/account",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/api/*",
+      "allowedRoles": ["anonymous", "authenticated"]
+    }
+  ],
+  "globalHeaders": {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "no-referrer"
+  }
+}

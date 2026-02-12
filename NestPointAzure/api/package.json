@@ -1,0 +1,17 @@
+{
+  "name": "nestpoint-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/functions.js",
+  "scripts": {
+    "start": "func start",
+    "test": "node -e \"console.log('no tests yet')\""
+  },
+  "dependencies": {
+    "@azure/data-tables": "^13.3.0",
+    "@azure/functions": "^4.5.0",
+    "@azure/storage-blob": "^12.25.0",
+    "uuid": "^9.0.1"
+  }
+}
